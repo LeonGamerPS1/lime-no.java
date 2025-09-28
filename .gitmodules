@@ -78,6 +78,9 @@
 	path = project/lib/mojoal
 	url = https://github.com/icculus/mojoAL
 	shallow = true
+[submodule "project/lib/miniaudio"]
+	path = project/lib/miniaudio
+	url = https://github.com/mackron/miniaudio
 [submodule "project/lib/hashlink"]
 	path = project/lib/hashlink
 	url = https://github.com/HaxeFoundation/hashlink
