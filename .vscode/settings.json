@@ -18,4 +18,5 @@
     },
     "files.trimTrailingWhitespace": true,
     "C_Cpp.autoAddFileAssociations": false,
+    "C_Cpp.default.compilerPath": "cl.exe",
 }

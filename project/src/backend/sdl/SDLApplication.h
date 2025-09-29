@@ -33,6 +33,7 @@ namespace lime {
 			virtual void Init ();
 			virtual int Quit ();
 			virtual void SetFrameRate (double frameRate);
+			virtual void SetRenderFrameRate (double renderFrameRate);
 			virtual bool Update ();
 
 			void RegisterWindow (SDLWindow *window);
@@ -50,30 +51,27 @@ namespace lime {
 			void ProcessTextEvent (SDL_Event* event);
 			void ProcessTouchEvent (SDL_Event* event);
 			void ProcessWindowEvent (SDL_Event* event);
-			int WaitEvent (SDL_Event* event);
 
 			static void UpdateFrame ();
 			static void UpdateFrame (void*);
 
 			static SDLApplication* currentApplication;
 
-			bool active;
 			ApplicationEvent applicationEvent;
 			ClipboardEvent clipboardEvent;
-			Uint32 currentUpdate;
-			double framePeriod;
 			DropEvent dropEvent;
 			GamepadEvent gamepadEvent;
 			JoystickEvent joystickEvent;
 			KeyEvent keyEvent;
-			Uint32 lastUpdate;
 			MouseEvent mouseEvent;
-			Uint32 nextUpdate;
 			RenderEvent renderEvent;
 			SensorEvent sensorEvent;
 			TextEvent textEvent;
 			TouchEvent touchEvent;
 			WindowEvent windowEvent;
+
+			double lastUpdate;
+			bool active;
 
 	};
 
